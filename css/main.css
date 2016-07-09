@@ -1,0 +1,640 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Begin Site-wide Styles*/
+
+html {
+	background-image: url(../images/backgroundPattern.gif);
+	background-repeat: repeat;
+	background-color: #393B3C;
+}
+
+html, body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#main {
+	width: 960px;
+	margin-bottom: 10px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0 0 5px 1px #000;
+	border-bottom: 13px solid #5F007F;
+	padding-bottom: 1em;
+	background-color: #FFF;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote {
+	margin:0;
+	padding:0;
+}
+
+q:before, q:after {
+	content:'';
+}
+
+abbr, acronym {
+	font-variant:normal;
+	border:0;
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+sup {
+	vertical-align:text-top;
+}
+
+sub {
+	vertical-align:text-bottom;
+}
+
+legend {
+	color:#000;
+}
+
+em {
+	font-style:italic;
+}
+
+strong {
+	font-weight:bold; 
+}
+
+a:link {
+	color: #0000CC;
+}
+
+a:hover {
+	color: #2c880c;
+}
+
+a:visited {
+	color: #800080;
+}
+
+fieldset, img {
+	border: none;
+}
+
+blockquote,ul,ol,dl {
+	margin:1em;
+}
+ol,ul,dl {
+	margin-left:2em;
+}
+
+dl dd {
+	margin-left:1em;
+}
+
+th {
+	font-weight:bold;
+	text-align:center;
+}
+
+p,fieldset, aside {
+	margin-bottom:1em;
+}
+
+section {
+
+}
+.whatisit section, .howdoesitwork section, .howdoigetit section, .howdoiuseit section {
+	padding: 25px 25px 0 25px;
+}
+
+h1 {
+	font-size: 167%;
+	padding-bottom: .5em;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 116%;
+	padding: 0;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+.clear {
+	clear:both;
+}
+
+.roundCorners {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.topLeftCell {
+	border-top-left-radius: 5px;
+}
+
+.topRightCell {
+	border-top-right-radius: 5px;
+}
+
+.bottomLeftCell {
+	border-bottom-left-radius: 5px;
+}
+
+.bottomRightCell {
+	border-bottom-right-radius: 5px;
+}
+
+body header.website {
+	position: relative;
+	background: #FFF url(../images/backgroundHeader.png) repeat-x; 
+	border-bottom: 6px solid #5F007F;
+	padding-top: 1em;
+	width: 960px;
+	overflow: hidden;
+}
+
+body header.website nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #CBACD5 url(../images/backgroundNav.png) repeat-x;
+	text-align: right;
+	border-top: 1px solid #5F007F;
+	border-left: 1px solid #5F007F;
+	height: 30px;
+	border-top-left-radius: 7px;
+}
+
+body header.website nav a {
+	border-right: 1px solid #5F007F;
+	border-left: 1px solid #FFF;
+	height: 100%;
+	padding: 0 19px;
+	line-height: 30px;
+	display: inline-block;
+	color: #47005F;
+	font-weight: bold;
+}
+
+body header.website nav a.firstLink {
+	border-right: 1px solid #5F007F;
+	border-left: 0px solid #5F007F;
+	border-top-left-radius: 6px;
+}
+
+
+body header.website nav a.lastLink {
+	border-right: 0px solid #5F007F;
+}
+
+
+body header.website nav a:link {
+	color: #47005F;
+	text-decoration: none;
+}
+
+body header.website nav a:visited {
+	color: #47005F;
+	text-decoration: none;
+}
+
+
+
+body header.website nav a:hover {
+	/*color: #FFFFFF;
+
+	border-right-color: #9F66B2;
+	*/
+	border-left-color: #F0E7F3;
+	
+	text-decoration: none;
+	
+	background-color: #BF99CC;
+	
+	text-shadow: 0px 0px 5px #fff;
+	
+	
+	background-image: -o-linear-gradient(bottom, #9F66B2 0%, #DFCCE5 100%);
+	background-image: -moz-linear-gradient(bottom, #9F66B2 0%, #DFCCE5 100%);
+	background-image: -webkit-linear-gradient(bottom, #9F66B2 0%, #DFCCE5 100%);
+	background-image: -ms-linear-gradient(bottom, #9F66B2 0%, #DFCCE5 100%);
+	background-image: linear-gradient(bottom, #9F66B2 0%, #DFCCE5 100%);
+	color: #180020;
+}
+
+body header.website nav a:active {
+	color: #47005F;
+	text-decoration: none;
+}
+
+body header.website nav a:link.active, body header.website nav a:visited.active, body header.website nav a:active.active, body header.website nav a:hover.active {
+	background-color: #5F007F;
+	background-image: none;
+	text-shadow: none;
+	color: #FFF;
+	cursor: default;
+	border-left-width: 0;
+}
+
+body header.website nav a:hover.active {
+	background-color: #5F007F;
+	color: #FFF;
+}
+
+#downloadArrow {
+	position: absolute;
+	bottom: 36px;
+	right: 9.5em;
+}
+
+#siteLogo {
+	margin-bottom: 3px;
+	margin-left: 28px;
+}
+
+
+
+#homeImage {
+	position:relative;
+	border-bottom: 6px solid #5F007F;
+	line-height: 0;
+}
+
+#homeImage img {
+	/*border-top: 1px solid #9f66b2;
+	border-bottom: 1px solid #9f66b2;*/
+}
+
+.home aside {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 116%;
+	color: #666;
+	font-style:italic;
+	width: 75%;
+	margin-top: 6px;
+	margin-bottom: 24px;
+}
+
+.home aside span {
+	color: #5F007F;
+}
+
+
+
+.home section {
+	padding: 25px 50px 0px 31px;
+	height: 193px
+}
+
+#lutherSeal {
+	float: right;
+}
+
+footer.website p#copyright {
+	font-size: 85%;
+	color: #AAA;
+	padding: 0 10px;
+}
+
+#contactUs {
+	position: absolute;
+	top: -10px;
+	right: 17px;
+}
+
+#contactUs a {
+	display: inline-block;
+	padding: 16px 10px 0px 10px;
+	height: 24px;
+	line-height: 24px;
+	color: #eee;
+	text-decoration:none;
+	background-color: #5F007F;
+	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+	text-shadow: 0px 1px 1px #000;
+	font-size: 93%;
+	font-weight: bold;
+}
+
+#contactUs a:hover {
+	padding-top: 20px;
+	color: #FFF;
+}
+
+table#curriculum {
+	float: right;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	width: 587px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 4px 0px #000;
+}
+
+table#curriculum caption{
+	text-align: left;
+	font-weight: bold;
+	padding-bottom: 3px;	
+}
+
+table#curriculum th, table#curriculum td{
+	padding: 5px;
+	border-right: 1px solid #000;
+}
+
+table#curriculum td {
+	vertical-align: top;
+	border-top: 1px solid #000;
+}
+
+table#curriculum th {
+	border-top-width: 0px;
+}
+
+th.set {
+	width: 12%;
+	background-color: #D9D9D9;
+}
+
+th.booksOfTheBible {
+	background-color: #CC0000;
+	color: #FFF;
+	width: 22%;
+}
+
+th.catechism {
+	background-color: #0044DD;
+	color: #FFF;
+	width: 22%;
+}
+
+th.biblePassages {
+	width: 22%;
+	background-color: #FFCC00;
+}
+
+th.timeline {
+	width: 22%;
+	background-color: #33AA11;
+	color: #FFF;
+}
+
+td.set {
+	font-weight: bold;
+	text-align: center;	
+}
+
+table#curriculum tr .timeline {
+	border-right-width: 0px;
+}
+
+
+.whatisit h1 {
+	clear: both;	
+}
+
+form#download fieldset{
+	border: 1px solid #5F007F;
+	padding: 13px;
+	width: 882px;
+}
+
+form#download fieldset legend {
+	font-weight: bold;
+	font-size: 116%;
+	padding: 0 .5em;
+}
+
+form#download label {
+	display:inline-block;
+	padding-bottom: 2px;	
+}
+
+form#download select {
+	display: block;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+form#download select.hidden {
+	display: none;	
+}
+
+input#downloadButton {
+	float: none;
+    display: block;
+    width: 100px;
+    margin: 14px auto 0px auto;
+	height: 26px;
+	background: #CCCCCC;
+	font-weight: bold;
+	border: 1px solid #A6A6A6;
+	background-image: -o-linear-gradient(bottom, #DDDDDD 0%, #F4F4F4 100%);
+	background-image: -moz-linear-gradient(bottom, #DDDDDD 0%, #F4F4F4 100%);
+	background-image: -webkit-linear-gradient(bottom, #DDDDDD 0%, #F4F4F4 100%);
+	background-image: -ms-linear-gradient(bottom, #DDDDDD 0%, #F4F4F4 100%);
+	background-image: linear-gradient(bottom, #DDDDDD 0%, #F4F4F4 100%);
+	border-radius:5px;
+	z-index: 0;
+}
+
+input#downloadButton:hover {
+	cursor: pointer;
+	background: #CAAAD4;
+	background-image: -o-linear-gradient(bottom, #CAAAD4 0%, #DFCCE5 100%);
+	background-image: -moz-linear-gradient(bottom, #CAAAD4 0%, #DFCCE5 100%);
+	background-image: -webkit-linear-gradient(bottom, #CAAAD4 0%, #DFCCE5 100%);
+	background-image: -ms-linear-gradient(bottom, #CAAAD4 0%, #DFCCE5 100%);
+	background-image: linear-gradient(bottom, #CAAAD4 0%, #DFCCE5 100%);
+}
+
+input#downloadButton:active {
+	cursor: pointer;
+	background: #bf99cc;
+	background-image: -o-linear-gradient(bottom, #bf99cc 0%, #d1b6da 100%);
+	background-image: -moz-linear-gradient(bottom, #bf99cc 0%, #d1b6da 100%);
+	background-image: -webkit-linear-gradient(bottom, #bf99cc 0%, #d1b6da 100%);
+	background-image: -ms-linear-gradient(bottom, #bf99cc 0%, #d1b6da 100%);
+	background-image: linear-gradient(bottom, #bf99cc 0%, #d1b6da 100%);
+}
+
+.downloadStep {
+	position: relative;
+	float: left;
+	margin-right: 25px;
+}
+
+.downloadButton {
+	position: relative;
+	clear:both;
+}
+
+
+
+.selectionDisabled {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .6;
+	filter:Alpha(opacity=60);
+	background-color: #FFFFFF;
+	z-index:1;
+}
+
+.downloadStep span {
+	display: inline-block;
+	color: #444444;
+	text-align:center;
+	font-size: 42px;
+	line-height: 42px;
+	width: 36px;
+	font-family:"Times New Roman", Times, serif;
+}
+
+.downloadStep div.field {
+	display: inline-block;
+	width: 229px;
+}
+
+.downloadStep div.hidden, .downloadButton div.hidden {
+	display: none;	
+}
+
+.howdoesitwork article {
+	clear: both;
+	height: 320px;
+	
+}
+
+.howdoesitwork section img {
+	float: right;
+	padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+.darkenBackground {
+	height: 100%;
+	width: 100%;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(0, 0, 0);
+	background-repeat:repeat;
+	-moz-opacity: 0.60;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	z-index: 10000;
+}
+
+#messageOverlay{
+	display: none;
+}
+
+#confirmBox{
+	background-color: #FFFFFF;
+	width:360px;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin:-150px 0 0 -200px;
+	border: 1px solid rgba(33, 33, 33, 0.6);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	z-index: 10001;
+	padding: 20px;
+}
+
+#confirmBox h1,
+#confirmBox p{
+	
+}
+
+#confirmBox h1{
+	letter-spacing:0.3px;
+	color:#888;
+}
+
+#confirmBox p{
+	background:none;
+	font-size:16px;
+	line-height:1.4;
+}
+
+#confirmButtons{
+	padding-top: 5px;
+	text-align:center;
+	
+}
+
+#confirmBox a.button{
+	display:inline-block;
+	background-color: #DDD;
+	color:#000;
+	position:relative;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 15px;
+	padding: 0 35px 0 40px;
+	text-decoration:none;
+	border:1px solid #AAAAAA;
+	border-radius: 7px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+	background-image: -o-linear-gradient(bottom, #CCCCCC 0%, #EEEEEE 100%);
+	background-image: -moz-linear-gradient(bottom, #CCCCCC 0%, #EEEEEE 100%);
+	background-image: -webkit-linear-gradient(bottom, #CCCCCC 0%, #EEEEEE 100%);
+	background-image: -ms-linear-gradient(bottom, #CCCCCC 0%, #EEEEEE 100%);
+	background-image: linear-gradient(bottom, #CCCCCC 0%, #EEEEEE 100%);
+}
+
+#confirmBox a.button:hover{
+	background-color: #EEE;
+	color:#000;
+	background-image: -o-linear-gradient(bottom, #DDDDDD 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #DDDDDD 0%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #DDDDDD 0%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #DDDDDD 0%, #FFFFFF 100%);
+	background-image: linear-gradient(bottom, #DDDDDD 0%, #FFFFFF 100%);
+}
+
+#confirmBox a.button:active{
+	background-color: #EEE;
+	color:#000;
+	background-image: -o-linear-gradient(bottom, #BBBBBB 0%, #DDDDDD 100%);
+	background-image: -moz-linear-gradient(bottom, #BBBBBB 0%, #DDDDDD 100%);
+	background-image: -webkit-linear-gradient(bottom, #BBBBBB 0%, #DDDDDD 100%);
+	background-image: -ms-linear-gradient(bottom, #BBBBBB 0%, #DDDDDD 100%);
+	background-image: linear-gradient(bottom, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+#confirmBox a.button:focus {
+outline: 0;
+}
