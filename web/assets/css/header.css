@@ -1,0 +1,22 @@
+body {
+	overflow-x: hidden;
+}
+
+body > header > nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #222;
+	margin-right: -200px;
+}
+
+.nav-trigger ~ nav {
+  transition: .2s
+}
+
+.nav-trigger:checked ~ nav {
+  margin-right: 0px;
+  transition: .2s
+}
