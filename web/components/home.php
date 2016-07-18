@@ -1,5 +1,5 @@
 <div id="homeImage">
-	<img src="assets/images/homeMainImage.jpg" width="960" height="256" alt="" />
+	<img src="assets/images/homeMainImage.jpg" alt="" style="width:100%;" />
 </div>
 <section>
 	<img src="assets/images/LutherSealColor.png" width="180" height="180" alt="Luther's Seal" id="lutherSeal" />

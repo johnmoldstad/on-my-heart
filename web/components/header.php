@@ -1,10 +1,11 @@
 
 
-<div class="" style="background-color: azure; width: 100%; height: 64px; text-align: center; line-height: 64px;" role="banner">
-	<img src="assets/images/logo.svg" alt="" style="display: inline-block; vertical-align: middle;" />
-	<label for="nav-trigger">Menu</label>
-</div>
-<input type="checkbox" id="nav-trigger" class="nav-trigger"  />
+<section class="header" role="banner">
+	<a href="#"><img src="assets/images/logo.svg" alt="" class="site-logo" /></a>
+	<label for="nav-trigger" class="nav-trigger-button">Menu</label>
+</section>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="nav-overlay" title="Close Menu"></label>
 <nav>
 	<ul>
 		<li><a href="#" data-ng-class="{active:$state.includes('root.home')}">Home</a></li>
