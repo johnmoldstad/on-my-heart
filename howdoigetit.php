@@ -121,6 +121,7 @@
 				<option value="0">Select One</option>
                 <option value="EHV">EHV</option>
 				<option value="NIV1984">NIV 1984</option>
+				<option value="NIV2011">NIV 2011</option>
 				<option value="NKJV">NKJV</option>
 			</select>
 		</div>
